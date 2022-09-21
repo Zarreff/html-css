@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mídias em  HTML5</title>
+    </head>
+    <body>
+        <h1>Tipos de Mídia</h1>
+        <h2>Imagem dinâmica</h2>
+        <picture>
+            <source media="(max-width: 730px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem flexível">
+        </picture>
+        <h2>Reproduzindo Áudios</h2>
+        <audio controls>
+            <source src="midia/cosy-prigida-main-version-02-58-17021.mp3" type="audio/mpeg">
+            <p>Seu navegador não pode reproduzir o áudio. Se desejar baixar o LoFi acima, <a href="midia/cosy-prigida-main-version-02-58-17021.mp3">Clique aqui</a>.</p>
+        </audio>
+        <!-- MP3 WAV OGG -->
+    </body>
+</html>

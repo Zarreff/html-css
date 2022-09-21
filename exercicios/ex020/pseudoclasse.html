@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo-classes</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+            div {
+                display: inline-block;
+                background-color: lightgray;
+                border: 1px solid black;
+                text-align: center;
+                height: 200px;
+                width: 200px;
+            }
+
+            div:hover {
+                background-image: linear-gradient(180deg, red, violet, blue);
+            }
+
+            p {
+                font: bold 1.5em 'Major Mono Display', monospace;
+                
+            }
+
+            a {
+                text-decoration: none;
+                color: darkmagenta;
+            }
+
+            a:visited {
+                color: tomato;
+            }
+
+            a:hover {
+                color: aliceblue;
+                background-image: linear-gradient(180deg, #464646, #000);
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: teal;
+                background-color: whitesmoke;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+
+        <p>Visite um site que estou fazendo <a href="#">aqui</a></p>
+        
+    </body>
+</html>

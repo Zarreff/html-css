@@ -1,0 +1,58 @@
+body{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/114/114717.png);
+    background-repeat: no-repeat;
+    background-size: 24em;
+    background-position: bottom;
+    background-position-y: 21.4em;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "title title title"
+    "sistema1 sistema2 sistema3"
+    "sistema4 sistema5 sistema6";
+}
+
+.psp, .x360{
+    padding-left: 0.5em;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+.title, .subtitle{
+    text-align: center;
+}
+
+.title{
+    grid-area: title;
+}
+
+.subtitle{
+    grid-area: title;
+    margin-top: 2.7em;
+}
+
+.psp{
+    grid-area: sistema1;
+}
+
+.ps2{
+    grid-area: sistema2;
+}
+
+.n64{
+    grid-area: sistema3;
+}
+
+.x360{
+    grid-area: sistema4;
+}
+
+.x-one{
+    grid-area: sistema5;
+}
+
+.pc{
+    grid-area: sistema6;
+}
