@@ -56,6 +56,8 @@ section.normal {
 
 section.imagem {
     color: white;
+    background: rgb(50, 50, 50) right center no-repeat fixed;
+    background-size: cover;
     box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.459),
                 inset -5px -5px 20px rgba(0, 0, 0, 0.459);
 }
@@ -64,17 +66,16 @@ section.imagem p {
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.308);
+    text-shadow: 1px 1px 5px black;
+    background-color: rgba(0, 0, 0, 0.425);
 }
 
 section.imagem1 {
-    background: rgb(50, 50, 50) url('../imagens/background001.jpg') right center no-repeat fixed;
-    background-size: cover;
+    background-image: url('../imagens/background001.jpg');
 }
 
 section.imagem2 {
-    background: rgb(50, 50, 50) url('../imagens/background002.jpg') right center no-repeat fixed;
-    background-size: cover;
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
