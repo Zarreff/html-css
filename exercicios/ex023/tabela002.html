@@ -12,6 +12,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,13 +20,34 @@
             border: 1px solid rgba(0, 0, 0, .7);
         }
 
+        caption{
+            background: lightgray;
+            padding: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
         thead, tfoot {
             color: whitesmoke;
             background-color: #777;
         }
 
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: #777;
+        }
+
         .num {
             text-align: right;
+        }
+
+        tbody tr:nth-child(odd) { /* 2n - 1 */
+            background: white;
+        }
+
+        tbody tr:nth-child(even) { /* 2n */
+            background: lightgray;
         }
     </style>
 </head>
@@ -33,6 +55,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes 
         table
+            caption
             thead
                 tr, td, th
             tbody
@@ -42,10 +65,13 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,10 +182,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">203.062.512</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quia sapiente architecto aperiam? Fuga, inventore autem ducimus cumque minus saepe totam cupiditate asperiores natus est dolorem explicabo vero beatae voluptas magnam at magni doloremque. Accusamus culpa ipsa officiis vero blanditiis voluptates, ex veniam sunt, sed, nemo obcaecati. Cumque assumenda quia autem provident nemo sed, delectus deserunt porro laudantium voluptatem distinctio aut excepturi repellendus. Magnam ut voluptas odio. Quos illum doloribus quam eum nobis necessitatibus sint ad quaerat quas nihil pariatur asperiores sapiente, labore perspiciatis laboriosam numquam in rerum veniam eos adipisci ipsum reprehenderit. Est magni hic odit eligendi natus aliquid laborum dicta totam a vero, possimus assumenda sunt quas, illum, nostrum nobis deserunt libero eius. Eum alias voluptas cumque enim illum aut iste maiores impedit odit nesciunt aliquid recusandae necessitatibus, nisi deleniti ipsum est suscipit expedita aperiam iusto quo! Sunt dignissimos quas eos modi doloribus? Animi omnis ex, fugiat sequi consequuntur nihil ea beatae quidem, qui quaerat quia expedita dolorum ad exercitationem quas tempora quam voluptate nostrum corporis laboriosam officia? Explicabo molestiae eligendi accusamus ut totam maxime dolorum nisi ducimus asperiores similique ab minus harum porro optio ullam illo voluptatum, ad animi expedita eius a. Vel illum incidunt ut quo reprehenderit consectetur amet totam provident porro nulla labore, itaque perferendis, vero inventore velit quos eligendi. Animi ad molestiae quibusdam libero at a, magni aperiam sapiente assumenda rerum consequuntur repudiandae, vel aliquid veniam suscipit est quam eius possimus facere quaerat. Saepe nihil porro, soluta similique recusandae fugit eveniet est exercitationem quidem fuga nesciunt perferendis veniam neque repellendus eius iusto dolores facere obcaecati cum praesentium architecto voluptas placeat quas itaque. Labore, sunt vitae, deleniti earum quas porro expedita pariatur at illo laboriosam explicabo debitis nam ullam dolor, ipsum quos inventore maxime. Impedit maiores doloribus ut. Tempore natus veritatis laborum ratione quaerat odit at. Minima obcaecati dolorem quod dolor excepturi sequi, voluptates doloremque officia illum rerum laudantium corporis, neque tempora minus. Accusamus, modi error veniam nostrum aliquam delectus quas, explicabo, odio fugit corporis omnis harum. Eligendi eaque saepe quis harum repudiandae. Harum minima unde voluptas. Esse dolor nulla nam illum hic quia aliquam tempora, eius quae nemo? Perspiciatis nostrum dolorum aspernatur omnis, velit deserunt veniam quia quisquam, eaque consectetur repellendus quod maxime nesciunt voluptatem quaerat totam ipsa debitis accusamus? Accusamus quidem assumenda voluptatem! Harum neque dolorem expedita qui eveniet recusandae reiciendis vero dicta, sed rerum, autem commodi omnis. Obcaecati, possimus quisquam minus explicabo dolorem nihil ratione a unde. Tempora ullam laborum similique laudantium error iste dolorum doloribus assumenda at suscipit vero odio reprehenderit veniam, minima incidunt eveniet quisquam nulla laboriosam perspiciatis, optio reiciendis ea blanditiis! Aliquid amet a quam, vero assumenda vitae eaque cum quos, doloremque unde harum. Quos impedit eaque esse corrupti numquam rerum aspernatur omnis temporibus, ea voluptate quam voluptatibus iste quis sapiente beatae rem nisi, earum quidem. Sunt quia natus, excepturi nostrum totam ducimus dolorum, vitae debitis, architecto corporis delectus aut provident harum maxime in ipsum minima sint. Necessitatibus possimus veniam numquam. Iste voluptates possimus, totam labore sunt quas qui?</p>
 </body>
 </html>
